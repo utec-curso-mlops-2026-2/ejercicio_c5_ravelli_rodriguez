@@ -1,0 +1,16 @@
+.testing
+outputs
+out
+.idea
+score
+
+# Datos: viven en S3 (ver src/download-data.py), no en Git
+data/in/
+
+# Entornos y caches
+.venv/
+venv/
+__pycache__/
+
+# Secretos
+.env
