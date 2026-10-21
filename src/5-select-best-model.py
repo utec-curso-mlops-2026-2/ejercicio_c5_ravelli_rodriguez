@@ -23,7 +23,7 @@ class SelectBestModel:
         x_cols = self._get_features_name()
         y_col = self._get_target_name()
         y_pred = self._best_model.predict_proba(df_data[x_cols])
-        auc_metric = metrics.roc_auc_score(df_data[y_col], y_pred[:,0])
+        auc_metric = metrics.roc_auc_score(df_data[y_col], y_pred[:,1])
         return auc_metric
 
     def select_best_model(self, df_data_train, df_data_test):
